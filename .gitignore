@@ -1,0 +1,9 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/Nbray/bin/Debug
+/Nbray/obj/Debug
+/Nbray.Security/bin/Debug
+/Nbray.Security/obj/Debug
+/Nbray.UnitTest

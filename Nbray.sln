@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nbray", "Nbray\Nbray.csproj", "{4AB279AE-6711-4DCA-8A36-85D754EDBCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nbray.Security", "Nbray.Security\Nbray.Security.csproj", "{7D22B9A4-101C-4B03-8959-01BE5922C490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nbray.UnitTest", "Nbray.UnitTest\Nbray.UnitTest.csproj", "{758C10E5-63A3-49D9-9B5A-71F9D5062BDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AB279AE-6711-4DCA-8A36-85D754EDBCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB279AE-6711-4DCA-8A36-85D754EDBCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB279AE-6711-4DCA-8A36-85D754EDBCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB279AE-6711-4DCA-8A36-85D754EDBCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D22B9A4-101C-4B03-8959-01BE5922C490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D22B9A4-101C-4B03-8959-01BE5922C490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D22B9A4-101C-4B03-8959-01BE5922C490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D22B9A4-101C-4B03-8959-01BE5922C490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{758C10E5-63A3-49D9-9B5A-71F9D5062BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758C10E5-63A3-49D9-9B5A-71F9D5062BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758C10E5-63A3-49D9-9B5A-71F9D5062BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758C10E5-63A3-49D9-9B5A-71F9D5062BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

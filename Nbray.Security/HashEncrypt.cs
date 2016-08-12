@@ -21,7 +21,7 @@ namespace Nbray.Security
         /// <param name="passwordFormat">加密方式</param>
         /// <returns></returns>
         [Obsolete]
-        public static string Encrypt(string plaintext, FormsAuthPasswordFormat passwordFormat)
+        private static string Encrypt(string plaintext, FormsAuthPasswordFormat passwordFormat)
         {
             return FormsAuthentication.HashPasswordForStoringInConfigFile(plaintext, passwordFormat.ToString());
         }
@@ -38,17 +38,31 @@ namespace Nbray.Security
         }
 
         /// <summary>
-        /// MD5加密字符串。
+        /// MD5哈希加密字符串。
         /// </summary>
-        /// <param name="inputString">要加密的字符串。</param>
-        /// <returns>返回加密后的字符串。</returns>
-        public static string Hash(string inputString)
+        /// <param name="inputText">要加密的文本。</param>
+        /// <returns>返回MD5加密后的哈希值。</returns>
+        public static string MD5Hash(string inputText)
         {
             //var algorithm = MD5.Create();
             var algorithm = new MD5CryptoServiceProvider();
-            var bytes = algorithm.ComputeHash(Encoding.UTF8.GetBytes(inputString));
-            //return Encoding.UTF8.GetString(bytes);
-            return BitConverter.ToString(algorithm.Hash).Replace("-", string.Empty).ToUpper();
+            var bytes = algorithm.ComputeHash(Encoding.UTF8.GetBytes(inputText));
+            var hexString = BitConverter.ToString(algorithm.Hash).Replace("-", string.Empty).ToUpper();
+            return hexString;
+        }
+
+        /// <summary>
+        /// SHA1哈希加密字符串。
+        /// </summary>
+        /// <param name="inputText">要加密的文本。</param>
+        /// <returns>返回SHA1加密后的哈希值。</returns>
+        public static string SHA1Hash(string inputText)
+        {
+            //var algorithm = SHA1.Create();
+            var algorithm = new SHA1CryptoServiceProvider();
+            var bytes = algorithm.ComputeHash(Encoding.UTF8.GetBytes(inputText));
+            var hexString = BitConverter.ToString(algorithm.Hash).Replace("-", string.Empty).ToUpper();
+            return hexString;
         }
     }
 }

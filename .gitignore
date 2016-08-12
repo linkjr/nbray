@@ -7,3 +7,4 @@
 /Nbray.Security/bin/Debug
 /Nbray.Security/obj/Debug
 /Nbray.UnitTest
+*.suo

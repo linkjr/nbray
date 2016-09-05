@@ -6,10 +6,10 @@ C#的公共库资源
 
 # 说明
 
-Nbray：基本应用类
+- Nbray：基本应用类
 
-Nbray.Net：网络、通信相关的类
+- Nbray.Net：网络、通信相关的类
 
-Nbray.Security：加密、安全相关的类
+- Nbray.Security：加密、安全相关的类
 
-Nbray.Web：与web相关的类。
+- Nbray.Web：与web相关的类。

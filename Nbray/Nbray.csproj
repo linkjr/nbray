@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateFormat.cs" />
     <Compile Include="DisposableObject.cs" />
     <Compile Include="Drawing\Thumbnail.cs" />
     <Compile Include="EnumDisplay.cs" />
